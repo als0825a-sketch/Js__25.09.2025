@@ -49,6 +49,11 @@ let myFavouriteCarBrands = ["Polestar", "Xpeng", "Ferrari"];  //Array
 console.log(myFavouriteCarBrands[0])
 
 
+
+// HEIHEIHEIHEIHEIHEIHEI
+
+
+
 /******************************************************************************
 OPPGAVE 3
 
