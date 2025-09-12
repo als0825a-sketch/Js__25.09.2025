@@ -81,6 +81,15 @@ let ti = 10;
 
 console.log(fem + ti * fem * fem)
 
+let count = 3;
+count ++;
+
+console.log(count)
+
+let countTwo = 6;
+countTwo --;
+
+console.log(countTwo)
 
 
 
@@ -105,13 +114,43 @@ Prøv å endre verdiene på variablene for å sikre at IF/ELSE-setningen din
 håndterer alle tilfeller korrekt.
 ******************************************************************************/
 
-let userName = "";
+let userName = "andreas";
 let userAge = 18;
 let userIsLoggedIn = false;
 let userIsBlocked = false;
 let goToPage = "";
 
 // Skriv koden for oppgave 4 her
+
+/*
+_____________________________________________________________________
+if (userName !== "") {
+  console.log("Brukernavnet er fylt inn");
+} else {
+  console.log("Brukernavnet er tomt");
+}
+
+if (userAge >= 18) {
+    console.log("Bruker er 18år eller eldre");
+}  else {
+    console.log("Bruker under 18år");
+}
+
+    if (userIsBlocked = false) {
+        console.log("False")
+    } else {
+        console.log("true")
+    }
+_-_-_-_-_-_-_-_-__-_-_-_-_-_-_-_-__-_-_-_-_-_-_-_-_
+*/
+
+if (userName !== "" && userAge >= 18 && userIsBlocked === false) {
+  userIsLoggedIn = true;
+  goToPage = "/home";
+  console.log(`Velkommen! ${userName}`);
+} else {
+  console.log("Innlogging feilet");
+}
 
 
 
@@ -130,7 +169,10 @@ Prøv å endre userMale til både true og false og bruk console.log for å sjekk
 at betingelsen din fungerer som den skal.
 ******************************************************************************/
 
-const userMale = false;
+const userMale = true;
 
 // Skriv koden for oppgave 5 her
 
+
+let userTitle = userMale ? "Mr" : "Ms"
+console.log(userTitle)
